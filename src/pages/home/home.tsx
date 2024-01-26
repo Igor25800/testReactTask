@@ -65,11 +65,11 @@ const Home = () => {
         })
     });
 
-    const snackBar = (message: string, name: string) => {
+    const snackBar = (message: string, name: string): void => {
         dispatch(changeOpenSnackBar({isActionSnackBar: true, message: `${message} ${name}`}));
     }
 
-    const addTask = (values: taskFormValue, formatDate: string) => {
+    const addTask = (values: taskFormValue, formatDate: string): void => {
         createTask({...values, date: formatDate}).then(() => snackBar('Add Task', values.name));
     }
 
@@ -88,13 +88,13 @@ const Home = () => {
         dispatch(openModal({isEditModal: true, isChangeActive: true}));
     };
 
-    const eventEditTask = (eventTask: taskFormValue) => {
+    const eventEditTask = (eventTask: taskFormValue): void => {
         dispatch(openModal({isEditModal: false, isChangeActive: true}));
         taskForm.setValues({...eventTask, date: dayjs(eventTask.date) as any});
         setName(eventTask.name);
     }
 
-    const eventDeleteTask = ({id, name}: taskFormValue) => {
+    const eventDeleteTask = ({id, name}: taskFormValue): void => {
         deleteTask(id as string).then(() => {
             snackBar('Delete Task', name)
         })

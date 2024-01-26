@@ -11,7 +11,7 @@ export interface SnackbarProps {
 
 const SnackbarModal: FC<SnackbarProps> = ({ open, message}) => {
     const dispatch = useAppDispatch();
-    const handleClose = (event: React.SyntheticEvent | Event, reason?: string) => {
+    const handleClose = (event: React.SyntheticEvent | Event, reason?: string): void => {
         if (reason === 'clickaway') {
             return;
         }
