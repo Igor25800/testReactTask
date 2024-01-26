@@ -1,0 +1,66 @@
+.w-100 {
+  width: 100%;
+}
+
+.colorText {
+  color: white;
+  text-transform: capitalize;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mt-1 {
+  margin-top: 1rem !important;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.colum {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.p-1 {
+ padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.ss-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  border: 1px solid rgb(114, 112, 112);
+  color: white;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
